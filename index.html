@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="css/style.css"> 
 </head>
 <body>
     <header>
@@ -78,16 +78,45 @@
             <div class="container">
                 <div class="offer-block">
                     <h2 class="section-title offer__title">
-                        Мы бесплатно разработаем дизайн-проект Вашего жилья и реалихуем его!
+                        Мы бесплатно разработаем дизайн-проект Вашего жилья и реализуем его!
                     </h2>
                     <span class="section-subtitle offer__subtitle">
                         Оставьте заявку на разработку бесплатного дизайн-проекта!
                     </span>
-                    <form action="#" class="form offer__form">
-                        <input type="text" class="input offer__input" placeholder="Ваше имя">
-                        <input type="tel" class="input offer__input" placeholder="Ваш телефон">
+                    <form action="mail.php" class="form offer__form" id="offer-form">
+                        <input type="text" class="input offer__input" name="username" placeholder="Ваше имя">
+                        <input type="tel" class="input offer__input" name="userphone" placeholder="Ваш телефон">
                         <button class="button offer__button">Получить бесплатный дизайн-проект</button>
                     </form>
+                    <div class="success">
+                        <div class="success-dialog">
+                            <h4 class="success-dialog__title"></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section portfolio">
+            <div class="container">
+                <h2 class="section-title portfolio__title">
+                    Работая с 2007 года, мы сделали более 500 ремонтов в квартирах и домах
+                </h2>
+                <div class="slider">
+                    <div class="slider__item"><img class="slider__img" src="img/slider2.jpg" alt="slider2"></div>
+                    <div class="slider__item"><img class="slider__img" src="img/slider3.jpg" alt="slider3"></div>
+                    <div class="slider__item"><img class="slider__img" src="img/slider1.jpg" alt="slider1"></div>
+                    <div class="slider__item"><img class="slider__img" src="img/slider1.jpg" alt="slider1"></div>
+                    <div class="slider__item"><img class="slider__img" src="img/slider2.jpg" alt="slider2"></div>
+                    <div class="slider__item"><img class="slider__img" src="img/slider3.jpg" alt="slider3"></div>
+                </div>
+                <div class="arrows portfolio__arrows">
+                    <div class="arrows__left">
+                        <img src="img/left-arrow.png" alt="left-arrow">
+                    </div>
+                    <div class="arrows__right">
+                        <img src="img/right-arrow.png" alt="right-arrow">
+                    </div>
                 </div>
             </div>
         </section>
@@ -101,6 +130,9 @@
     </div>
 </div>
 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
