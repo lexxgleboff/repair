@@ -10,6 +10,9 @@
 //    modal.classList.remove('modal_active')
 // });
 
+// Инициализация WOW.js
+
+
 // Открытие и закрытие модального окна обратной связи
 $(function() {
     $('#button').on('click', function () {
