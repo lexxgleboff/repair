@@ -14,13 +14,6 @@ img
 .container
     width: 1170px
     margin: 0 auto
-@media (max-width: 1200px)
-    .container
-        width: 760px
-@media (max-width: 768px)
-    .container
-        max-width: 580px
-        width: 90%
 .button
     background-color: $main-color
     border-radius: 10px
@@ -32,9 +25,10 @@ img
 .section
     padding: 90px 0
     &-title
-        max-width: 500px
+        max-width: 655px
         text-align: center
-        font-size: 24px
+        font-size: 30px
+        line-height: 45px
         +bold
     &-subtitle
         display: block
@@ -47,4 +41,18 @@ img
 .arrows
     &__left, &__right
         cursor: pointer
-        
+
+@media (max-width: 1200px)
+    .container
+        width: 760px
+@media (max-width: 768px)
+    .container
+        max-width: 580px
+        width: 90%
+    .section
+        padding: 50px 0
+        &-title
+            font-size: 18px
+            line-height: 1.2
+        &-subtitle
+            font-size: 14px
