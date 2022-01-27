@@ -1,0 +1,38 @@
+.contract
+    padding-top: 50px
+    &__title
+        margin: 0 auto
+        padding-bottom: 100px
+    &__items
+        display: flex
+        justify-content: space-around
+    &__item
+            margin-bottom: 30px
+    &-block
+        &__text
+            display: block
+            max-width: 290px
+            text-align: center
+            padding-top: 30px
+            font-size: 18px
+            line-height: 1.3
+        &__img
+            &__img
+                display: block
+                margin: 0 auto
+@media (max-width: 1200px)
+    .contract
+        &__items
+            flex-wrap: wrap
+@media (max-width: 768px)
+    .contract
+        padding-top: 0
+        &__title
+            padding-bottom: 50px
+        &__items
+            justify-content: center
+            margin-left: 10px
+            margin-right: 10px
+        &-block
+            &__text
+                font-size: 14px

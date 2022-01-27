@@ -70,7 +70,7 @@ img {
     width: 90%;
   }
   .section {
-    padding: 50px 0;
+    padding: 40px 0;
   }
   .section-title {
     font-size: 18px;
@@ -667,7 +667,6 @@ img {
 
 .advantage-block {
   width: 370px;
-  min-width: 270px;
   height: 410px;
   min-height: 305px;
   padding: 35px 58px 0 30px;
@@ -698,7 +697,68 @@ img {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  .advantage-block {
+  .advantage__item {
     margin-bottom: 30px;
+  }
+}
+
+.contract {
+  padding-top: 50px;
+}
+
+.contract__title {
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+
+.contract__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.contract__item {
+  margin-bottom: 30px;
+}
+
+.contract-block__text {
+  display: block;
+  max-width: 290px;
+  text-align: center;
+  padding-top: 30px;
+  font-size: 18px;
+  line-height: 1.3;
+}
+
+.contract-block__img__img {
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .contract__items {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .contract {
+    padding-top: 0;
+  }
+  .contract__title {
+    padding-bottom: 50px;
+  }
+  .contract__items {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .contract-block__text {
+    font-size: 14px;
   }
 }
