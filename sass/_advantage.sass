@@ -1,0 +1,28 @@
+.advantage
+    &__items
+        display: flex
+        justify-content: space-between
+    &-block        
+        width: 370px
+        min-width: 270px
+        height: 410px
+        min-height: 305px
+        padding: 35px 58px 0 30px
+        font-weight: bolder
+        &:nth-child(1)
+            background: url('../img/advantage1.jpg') no-repeat
+            // margin-right: 20px
+        &:nth-child(2)
+            background: url('../img/advantage2.jpg') no-repeat
+        &:nth-child(3)
+            background: url('../img/advantage3.jpg') no-repeat
+        &__text
+            font-size: 16px
+            line-height: 1.5
+@media (max-width: 1200px)
+    .advantage
+        &__items
+            flex-wrap: wrap
+            justify-content: space-around
+        &-block
+            margin-bottom: 30px
