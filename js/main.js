@@ -10,8 +10,28 @@
 //    modal.classList.remove('modal_active')
 // });
 
-// Инициализация WOW.js
+// Валидация формы
+$('#brif-form').validate({
+  rules: {
+    username: {
+      required: true,
+      minlength: 2
+    },
+    phone: "required",
+  },
+  messages: {
+    username: {
+      required: "Укажите имя",
+      minlength: "Имя слишком короткое" 
+    },
+    phone: "Укажите телефон"
+  }
+});
 
+// Маска для телефона
+$('#phone').mask('+7 (999) 999-99-99')
+// Инициализация WOW.js
+new WOW().init();
 
 // Открытие и закрытие модального окна обратной связи
 $(function() {
